@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+//rekenmachine
+
+int main() {
+int number1;
+int number2;
+char arithmetic;
+cout<<"First number: ";
+cin>>number1;
+cout<<"arithmetic: (+,-,*,/): ";
+cin>>arithmetic;
+cout<<"Second number: ";
+cin>>number2;
+if (arithmetic == '+'){
+cout<<number1+number2;
+}
+else if(arithmetic == '-'){
+cout<<number1-number2;
+}
+else if(arithmetic == '*'){
+cout<<number1*number2;
+}
+
+else if(arithmetic == '/'){
+if (number2 != 0){
+cout<<number1/number2;
+}
+else {
+cout << "Impossible calculation (division by zero)";
+}
+}
+
+else {
+cout << "Invalid operator!";
+}
+
+
+ return 0;
+}
