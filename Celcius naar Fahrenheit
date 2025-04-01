@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+//Celcius to Fahrenheit
+
+int main() {
+double temperatuur;
+cout<<"Temperature Celsius: ";
+cin>>temperatuur;
+cout<<"Fahrenheit: "<<((temperatuur * 9)/5) + 32;
+
+return 0;
+}
+
